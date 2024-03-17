@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main-container">
+      <!-- DateInputs -->
+      <div class="date-container">
+        <div class="dateofBirth">
+          <label for="day">Day</label>
+          <input
+            type="number"
+            id="dayInput"
+            min="1"
+            max="31"
+            placeholder="DD"
+          />
+          <p id="dayErrorMessage"></p>
+        </div>
+        <div class="dateofBirth">
+          <label for="month">Month</label>
+          <input
+            type="number"
+            id="MonthInput"
+            min="1"
+            max="12"
+            placeholder="MM"
+          />
+          <p id="monthErrorMessage"></p>
+        </div>
+        <div class="dateofBirth">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            id="YearInput"
+            min="1"
+            max="2024"
+            placeholder="YYYY"
+          />
+          <p id="yearErrorMessage"></p>
+        </div>
+      </div>
+
+      <div class="divider">
+        <div class="line"></div>
+        <button onclick="calculateAge()" type="button">
+          <img src="./assets/icon-arrow.svg" class="arrow" />
+        </button>
+      </div>
+
+      <div id="textResult">
+        <em><span id="yearResult">--</span> years</em>
+        <em><span id="monthResult">--</span> month</em>
+        <em><span id="dayResult">--</span> days</em>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Benedict(CeejayDevlab)</a>.
+    </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
